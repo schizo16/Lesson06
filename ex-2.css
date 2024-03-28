@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 16px;
+}
+nav{
+    background-color: #484848;
+    
+    
+}
+nav ul{
+    list-style: none;
+    /* padding-left: 1rem; */
+}
+nav ul a{
+    display: block;
+    color: yellow;
+    padding: .5rem 0 .5rem 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    transition: .3s all ease;
+}
+nav a:hover{
+    color: red;
+    cursor: pointer;
+    background-color: #ccc;
+}
+

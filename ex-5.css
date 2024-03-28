@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body{
+    font-size: 16px;
+}
+nav{
+    background-color: #484848;
+    margin: 1rem 10%;
+    border-radius:  10px;
+    box-shadow:  0.375rem 0.75rem  1.5rem rgba(0,  0, 0, 0.1);
+    
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}
+nav > ul {
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: .5rem 1rem;
+}
+nav > ul a {
+    border-right: 1px solid #ccc;
+}
+nav > ul >li:hover:first-child a {
+    border-right: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+nav li>ul a {
+    border-bottom: 1px solid #ccc;
+}
+
+nav li:hover > a{
+    color: red;
+    cursor: pointer;
+    background-color: #ccc;
+}
+/* ẩn menu con */
+nav > ul li > ul {
+    display: none;
+    position: absolute;
+    background-color: #383838;
+    width: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* hiện lên menu con khi hover vào cha */
+nav > ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav li:hover > ul li:last-child a {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
